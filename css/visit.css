@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+   }
+body{
+    font-size: 20px;
+    overflow-y: scroll;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: hinamincho-regular;
+    src: url(fonts/himamincho-regular);
+}
+
+p{
+    font-size: 18px;
+}
+
+header{
+    background-color: #333533;
+    width: 100%;
+}
+
+.nav-logo{
+    width:100px;
+    height: 60px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: hinamincho-regular;
+  
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    color: #FFDC00;
+    scale: 1.03;
+    transition: .2s ease-in;
+    text-decoration: underline white;
+  
+}
+.nav-link:active{
+    cursor: pointer;
+    color: #FFDC00;
+    scale: 1.03;
+    transition: .2s ease-in;
+    text-decoration: underline white;
+  
+}
+
+
+.menu{
+    display: none;
+    background-color: #333533;
+    width: 100%;
+    height: 310px;
+}
+
+.is-visible{
+    transition: .4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    transition: .2s ease-in-out;
+    top: 6%;
+    z-index: 1;
+    
+}
+
+
+.hamburger-btn{
+    background-color: transparent;
+    border: 0 solid transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.hamburger-btn:hover{
+    cursor: pointer;
+    color: #FFDC00;
+} 
+
+.hamburger-btn:active{
+    cursor: pointer;
+    color: #FFDC00;
+} 
+
+.container{
+    width: 100%;
+}
+
+.element{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #333533;
+}
+
+.museum-img{
+    padding: 15px;
+    width: 100%;
+    opacity: .5;
+}
+.section-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 30px 0;
+}
+.about-section{
+    padding: 15px;
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.museum-hall-img{
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 10px;
+    
+}
+
+.about-elements{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.getting-to-know-us{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.container-two{
+    width: 100%;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0px;
+    font-size: 16px;
+
+}
+.admission{
+    margin: 15px;
+    background-color: #cfdbd53e;
+    padding: 15px;
+}
+
+.admission-text{
+    padding-bottom: 15px;
+}
+.ad-paragraph{
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-link{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.contact-link:hover{
+    text-decoration: underline;
+}
+
+.contact-link:active{
+    text-decoration: underline;
+}
+
+
+.list ul{
+    list-style: none;
+    line-height: 1.6;
+    font-size: 16px;
+
+}
+
+.reservation{
+    padding: 15px;
+    margin: 25px 15px 25px 15px;
+    background-color: #333533;
+}
+
+.reservation-text{
+    color: #FFDC00;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.input-label{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.label-res{
+    color:#fff;
+    font-weight: 600;
+}
+.input-res{
+    height: 25px;
+}
+:placeholder-shown{
+    font-size: 12px;
+}
+
+.plan-visit{
+    padding: 20px 0 20px 0 ;
+    color: #fff;
+}
+
+.input-date{
+    cursor: pointer;
+    background-color: #333533;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: rgba(255, 255, 255, 0.873);
+}
+input[type="time"]{
+    cursor: pointer;
+    background-color: #333533;
+    width: 100px;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+
+.plan-of-visit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.selector{
+    cursor: pointer;
+    background-color: #333533;
+    height: 25px;
+    border:1px solid #fff;
+    color: #fff;
+    width: 80px;
+}
+
+input[type="submit"]{
+    background-color: #FFDC00;
+    color: #333533;
+    border: 0 solid transparent;
+    width: 80px;
+    height: 25px;
+    margin: 20px 0px 20px 0;
+}
+.book-now:hover{
+    scale: 1.02;
+    cursor: pointer;
+    transition: .3s ease;
+    font-weight: 600;
+}
+.book-now:active {
+    scale: 1.01;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-weight: 600;
+}
+
+.visit-elements{
+    width: 100%;
+    background-color: #cfdbd53e;
+    padding:15px;
+}
+.info-img{
+    width: 100%;
+}
+
+.visit-titles{
+    padding: 20px 0 20px 0;
+}
+
+.footer-elements{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0 50px 0;
+}
+.connect-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.connect-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 5px;
+}
+
+h6{
+    font-size: 15px;
+}
+.log-in{
+    padding-top: 20px;
+}
+
+
+footer a{
+    text-decoration: none;
+}
+
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:active{
+    text-decoration: underline;
+}
+.footer-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 30px;
+    
+}
+
+.ca{
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.terms{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 640px){
+
+    p{
+        font-size: 20px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    }
+
+    .museum-img{
+        width: 80%;
+        padding: 20px 0 20px 0;
+    }
+
+
+
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .museum-hall-img{
+        width: 550px;
+    }
+
+
+    .getting-to-know-us{
+        font-size: 20px;
+        padding-top: 60px;
+    }
+
+    .about-p{
+        width: 600px;
+        padding: 5px 30px 0 30px;
+    }
+
+    .location{
+       
+        padding: 60px 0 60px 0px;
+    
+    }
+
+    
+    .ad-paragraph{
+        width: 230px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .reserv{
+        display: flex;
+        justify-content: center;
+    }
+
+    .reservation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 555px;
+    }
+
+
+    .visit-info{
+        display: flex;
+        width: 255px;
+        justify-content: center;
+    }
+    .aa{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .shop-group{
+        display: flex;
+        justify-content: center;
+    }
+
+    .shop{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        width: 560px;
+    }
+    
+
+    .shop-img{
+        width: 300px;
+        margin-left: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .hamburger-btn{
+        display: none;
+    }
+
+    .menu{
+        display: contents;
+    }
+
+    .nav-item{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .location{
+       
+        padding: 60px 0 60px 0px;
+    
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .museum-img{
+        width: 65%;
+    }
+
+    .museum-hall-img{
+        width: 650px;
+    }
+
+    .about-p{
+        width: 700px;
+    }
+
+ 
+
+    .admission{
+        width: 310px;
+    }
+
+    .reservation{
+        width: 650px;
+        height: 350px;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+
+    .visit-info{
+        width: 300px;
+    }
+
+    .shop{
+        width: 650px;
+    }
+    .shop-img{
+        margin-left:155px ;
+    }
+
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .footer-elements{
+        display: flex;
+        gap: 100px;
+        flex-direction: row;
+
+
+    }
+
+    .terms{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .museum-img{
+        width: 50%;
+    }
+
+  
+
+    .museum-hall-img{
+        width: 480px;
+        padding: 25px 0 0 0;
+    }
+    .about-p{
+        width: 500px;
+    }
+
+    .about-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 25px;
+        margin-bottom:30px ;
+
+    }
+
+    
+    .admission{
+        width: 470px;
+    }
+
+    .ad-paragraph {
+        width: 357px;
+    }
+
+    .reservation {
+        width: 970px;
+        height: 350px;
+        padding: 30px 100px 20px 100px;
+        margin-bottom: 50px;
+    }
+
+    .visit-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+    .shop{
+        padding: 0;
+        width: 300px;
+    }
+    .shop-img{
+        width: 100%;
+        padding:0;
+        margin: 0;
+    }
+
+    .row-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-elements{
+        gap: 200px;
+    }
+
+    
+
+
+}
+@media screen and (min-width: 1920px){
+    
+}
+

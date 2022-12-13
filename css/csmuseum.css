@@ -1,0 +1,1305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: hinamincho-regular;
+    src: url(fonts/himamincho-regular);
+}
+html {
+    scroll-behavior: smooth;
+   }
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header{
+    background-color: #333533;
+    width: 100%;
+}
+
+.nav-logo{
+    width:100px;
+    height: 60px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: hinamincho-regular ;
+  
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    color: #FFDC00;
+    scale: 1.03;
+    transition: .2s ease-in;
+    text-decoration: underline white;
+  
+}
+.nav-link:active{
+    cursor: pointer;
+    color: #FFDC00;
+    scale: 1.03;
+    transition: .2s ease-in;
+    text-decoration: underline white;
+  
+}
+
+
+.menu{
+    display: none;
+    background-color: #333533;
+    width: 100%;
+    height: 310px;
+}
+
+.is-visible{
+    transition: .4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    transition: .2s ease-in-out;
+    top: 6%;
+    z-index: 2;
+    
+}
+
+
+.hamburger-btn{
+    background-color: transparent;
+    border: 0 solid transparent;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hamburger-btn:hover{
+    cursor: pointer;
+    color: #FFDC00;
+} 
+
+.hamburger-btn:active{
+    cursor: pointer;
+    color: #FFDC00;
+} 
+
+.section-one{
+    z-index: 1;
+    position:absolute;
+}
+
+.container-one{
+    background-color: #333533;
+    margin: 20px 0 20px 0;
+    
+}
+.banner{
+    width: 100%;
+    padding: 10px;
+    opacity: .5;
+}
+
+.container-p{
+    color: #fff;
+    width: 90%;
+    padding: 15px;
+    font-size: 13px;
+    position: absolute;
+    top: 50%;
+    font-weight: 500;
+}
+
+.free-ticket{
+    z-index: 2;
+    color: #FFDC00;
+   
+    
+}
+.free-ticket:hover{
+    scale: 1.02; 
+    cursor: pointer;
+    text-decoration: none;
+}
+.free-ticket:active{
+    scale: 1.02;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 70%;
+    background-color: #cfdbd53e;
+}
+.container-element-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.museum-img{
+    width: 100%;
+    padding: 20px 10px 15px 10px;
+
+}
+.section-two-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 16px;
+}
+.section-two-sp{
+    padding: 10px 15px 10px 15px;
+}
+#check{
+    display: none;
+}
+.content-read-more{
+    display: none;
+    padding: 5px 15px 15px 15px;
+}
+
+#check:checked ~ .content-read-more{
+    display: flex;
+}
+
+
+.read-more{
+    margin: 15px 20px 15px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.read-more:hover{
+    transition: .3s ease;
+    scale: 1.01;
+    text-decoration: underline;
+
+}
+.read-more:active{
+    transition: .3s ease;
+    scale: 1.01;
+    text-decoration: underline;
+
+}
+.container-element-three{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore{
+    display: flex;
+    margin: 30px 20px ;
+}
+
+.section-three  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333533;
+    
+}
+
+.container-three{
+    width: 100%;
+}
+.kids-museum{
+    width: 100%;
+    padding: 15px;
+}
+h4{
+    font-size: 18px;
+    padding: 5px 15px 15px 15px;
+    color: #FFDC00;
+}
+
+.container-3-p{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.container-p1, .container-p2, .container-p3, .container-p4{
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.p3-p4{
+    display: none;
+}
+.checkbox2{
+    display: none;
+}
+
+
+#check-2:checked~.p3-p4{
+    display: flex;
+    flex-direction: column;
+}
+
+.read-more-2{
+    margin: 15px 20px 15px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+.read-more-2:hover{
+    transition: .3s ease;
+    scale: 1.01;
+    text-decoration: underline white;
+    color: #FFDC00;
+    
+}
+.read-more-2:active{
+    transition: .3s ease;
+    scale: 1.01;
+    text-decoration: underline white;
+    color: #FFDC00;
+    
+}
+
+
+.spg-container-element{
+    background-color: #cfdbd53e;
+    margin:20px 0 20px 0 ;
+}
+
+.container-element-four{
+    background-color: #cfdbd53e;
+    margin:20px 0 20px 0 ;
+}
+
+.cos{
+    margin-top: 20px;
+    background-color: #cfdbd53e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.evo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#cfdbd53e
+}
+
+.science-tour{
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+.science-tour:hover{
+    scale: 1.01;
+    transition: .2s ease-in-out;
+}
+.for-teachers{
+    color: black;
+    padding: 0 15px;
+    font-size: 18px;
+}
+.container-4p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding: 15px;
+    font-size: 15px;
+}
+.cp1, .cp2{
+    
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+
+.explore-button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 0 15px 0;
+}
+.explore-btn{
+    width: 60px;
+    height: 20px;
+    border-radius: 3px;
+    border: 0 solid transparent;
+    background-color: #333533;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.explore-btn:hover{
+    cursor: pointer;
+    scale: 1.01;
+    transition: .2s ease-in;
+    color: #FFDC00;
+    
+}
+
+.h2{
+    margin: 50px  20px 15px;
+}
+
+.section-5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333533;
+    margin-bottom: 10px;
+}
+.container-element-5{
+    width: 100%;
+    
+}
+.heart{
+
+    width: 100%;
+    padding: 15px;
+}
+
+.heart:hover{
+    cursor: pointer;
+    scale: 1.01;
+    transition: .3s ease-in-out;
+}
+
+.heart:active{
+    cursor: pointer;
+    scale: 1.01;
+    transition: .3s ease-in-out;
+}
+
+.ai{
+    display: none;
+}
+
+.c5p1, .c5p2, .c5p3{
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    
+}
+.read-more-group{
+    display: none;
+}
+
+.checkbox3{
+    display: none;
+}
+
+#check-3:checked ~ .read-more-group{
+    display: flex;
+    flex-direction: column;
+}
+.read-more-3{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 20px 15px 15px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    color: #fff;
+}
+.read-more-3:hover{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    scale: 1.01;
+    transition: .3s ease-in-out;
+}
+.read-more-3:active{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    scale: 1.01;
+    transition: .3s ease-in-out;
+}
+
+
+.section-6{
+    background-color: #333533; 
+}
+.c6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.images{
+    width: 100%;
+    padding: 15px;
+}
+.images:hover{
+    cursor: pointer;
+    scale: 1.02;
+    transition: .3s ease-in-out;
+}
+.c6-titles{
+    display: flex;
+    color: #FFDC00;
+    padding: 15px;
+    font-size: 16px;
+}
+.c6-p{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.c6-p1, .c6-p2, .c6-p3{
+    padding: 15px;
+}
+.c6-p2, .c6-p3{
+    display: none;
+}
+#check-4:checked~.c6-p2{
+    display: flex;
+}
+.checkbox4{
+    display: none;
+}
+.check-4{
+    display: flex;
+    margin: 15px;
+    justify-content: end;
+}
+.check-4:hover{
+    cursor: pointer;
+    color: #FFDC00;
+    scale: 1.01;
+    text-decoration: underline white;
+    transition: .3s ease-in-out;
+}
+.check-4:active{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    transition: .3s ease-in-out;
+    scale: 1.01;
+}
+
+.check-4:active{
+    color: #FFDC00;
+    scale: 1.01;
+    transition: .3s ease-in-out;
+}
+
+.c6-explore-button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 0 15px 0;
+}
+
+.c6-explore-btn{
+    width: 60px;
+    height: 20px;
+    border-radius: 3px;
+    border: 0 solid transparent;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.c6-explore-btn:hover{
+    cursor: pointer;
+    scale: 1.01;
+    transition: .2s ease-in;
+    color: #FFDC00;
+    background-color: #e3e3e31f;
+    
+}
+.c6-explore-btn:active{
+    cursor: pointer;
+    scale: 1.01;
+    transition: .2s ease-in;
+    color: #FFDC00;
+    background-color: #e3e3e31f;
+    
+}
+
+.volunteer-p2, .volunteer-p3{
+    padding: 15px;
+}
+.volunteer-p{
+    display: none;
+    flex-direction: column;
+}
+#check-5:checked~.volunteer-p{
+    display: flex;
+}
+.check-5{
+    display: flex;
+    margin: 15px;
+    justify-content: end;
+}
+.check-5:hover{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    transition: .3s ease-in-out;
+    scale: 1.01;
+}
+
+.check-5:active{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    transition: .3s ease-in-out;
+    scale: 1.01;
+}
+.internship-p{
+    padding: 15px;
+    display: none;
+}
+
+#check-6:checked~.internship-p{
+    display: flex;
+}
+.check-6{
+    display: flex;
+    margin: 15px;
+    justify-content: end;
+}
+.check-6:hover{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    transition: .3s ease-in-out;
+    scale: 1.01;
+}
+.check-6:active{
+    cursor: pointer;
+    color: #FFDC00;
+    text-decoration: underline white;
+    transition: .3s ease-in-out;
+    scale: 1.01;
+}
+.footer-elements{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0 50px 0;
+}
+.connect-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.connect-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 5px;
+}
+
+h6{
+    font-size: 18px;
+}
+.log-in{
+    padding-top: 20px;
+}
+
+footer a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+}
+footer a:active{
+    text-decoration: underline;
+    
+}
+.terms{
+    margin: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (min-width: 480px){
+    .container-element{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explore{
+        margin-left: 35px;
+    }
+
+    .banner{
+        width: 95%;
+    }
+
+    .container-p{
+        width: 450px;
+        top: 60%;
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .container-two{
+        width: 400px;
+    }
+
+    .container-three{
+        width: 450px;
+    }
+
+    .c4-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-four{
+        width: 450px;
+    }
+
+    .container-element-5{
+        width: 450px;
+    }
+
+    .cos{
+        width: 450px;
+
+    }
+
+    .exhibition-spaces
+    {
+        margin: 50px 25px;
+    }
+
+    .exhibition-spaces-group-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-four-group{
+        width: 430px;
+    }
+
+    .exhibition-spaces-group-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .evo1{
+    
+    width: 450px;
+}
+
+.special-events{
+    margin: 50px 25px 40px 25px;
+}
+
+    .spg-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spg-container-element{
+        width: 450px;
+        
+    }
+
+    .image-group{
+        width: 90%;
+        margin-left: 25px;
+    }
+
+    .container-six{
+        width: 400px;
+    }
+
+    .get-involved{
+        margin: 50px 25px;
+    }
+
+}
+
+@media screen and (min-width: 640px){
+
+    .banner{
+        width: 85%;
+    }
+
+    .container-p{
+     cursor: pointer;
+     font-size: 16px;
+     top: 70%;
+     width: 600px;
+     padding-left: 48px;
+    }
+
+    .explore{
+        margin-left:110px ;
+    }
+
+    .exhibition-spaces{
+        margin-left: 110px;
+    }
+
+    .special-events-ex{
+        margin-left: 80px;
+    }
+
+    .get-involved{
+        margin-left: 100px;
+    }
+    
+   
+}
+@media screen and (min-width: 768px) {
+
+    .hamburger-btn{
+        display: none;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 60px;
+    }
+
+    .section-two{
+        margin-bottom: 5vh;
+    }
+
+    .nav-item{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .nav-logo{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+
+    .museum-img{
+        width: 95%;
+    }
+
+    .c4-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-four{
+        width: 350px;
+
+    }
+    .f1{
+        margin-top: 50px ;
+    }
+
+    .exhibition-spaces-group-2{
+        margin-bottom: 7vh;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .nav-logo{
+        margin-left: 85px;
+    }
+
+    .container-p{
+        width: 700px;
+        font-size: 20px;
+        top: 63%;
+        padding-left: 0;
+    }
+
+    .banner{
+        width: 75%;
+    }
+
+    .section-two{
+        margin-top: 60%;
+    }
+
+    .s2p{font-size: 18px;
+
+    }
+
+    .section-two-p{
+        width: 350px;
+        margin-top:  55px;
+    }
+    
+    
+    .container-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .museum-img {
+        width: 450px;
+    }
+    
+    .explore{
+        margin-left: 135px;
+        margin-bottom: 35px;
+        font-size: 20px;
+    }
+
+    .container-three{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kids-museum{
+        width: 410px;
+    }
+
+    .kids-txt{
+        padding-top: 50px;
+        font-size: 20px;
+    }
+
+    .container-p1, .container-p2, .container-p3, .container-p4{
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .c4-group{
+        gap: 80px;
+    }
+
+    .for-teachers{
+        font-size: 20px;
+    }
+
+    .cp1, .cp2{
+        font-size: 18px;
+    }
+
+    .container-element-four{
+        width: 385px;
+    }
+
+    .f1{
+    margin-top:60px ;
+    }
+
+    .c4-img{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+
+    .exhibition-spaces{
+        font-size: 20px;
+        margin-left: 125px;
+    }
+
+    .container-element-5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .heart{
+        width: 410px;
+        padding: 50px 0 50px 0;
+    }
+
+    .c5p1, .c5p2, .c5p3{
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .container-5-h4{
+        padding-top: 20px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+
+    .exhibition-spaces-group-1{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        gap: 20px;
+       
+    }
+
+    .cos{
+        width: 400px;
+    }
+
+
+    .exhibition-spaces-group-2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        gap: 20px;
+        padding-right: 20px;
+    }
+
+    .ai1{
+        margin-top: 37px;
+    }
+
+    .evo1{
+        width: 400px;
+        margin-top: 160px;
+    }
+
+    .special-events-group{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .special-events-ex{
+        margin-top:200px ;
+        margin-left:25px ;
+        font-size: 25px;
+    }
+
+    .spg-container-element{
+        width: 300px;
+    }
+    .image-group{
+        margin-left: 20px;
+    }
+    .img-g2{
+        margin-left: 14px;
+    }
+
+    .get-involved{
+        margin-left: 65px ;
+    }
+    .c6-titles{
+        font-size: 20px;
+    }
+
+
+    .c6-p, .c6-p1, .c6-p2{
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .container-six{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 20px;
+
+    }
+
+    .img-c6{
+        width: 300px;
+        margin: 0;
+    }
+
+    footer a{
+        font-size: 20px;
+    }
+
+
+    
+}
+    
+
+  
+@media screen and (min-width: 1440px){
+
+    .nav-logo{
+        margin-left: 190px;
+    }
+    .banner{
+        width: 60%;
+    }
+
+    .container-p{
+        font-size: 18px;
+        top: 75%;
+    }
+
+    .museum-img {
+        width: 500px;
+        padding: 50px 0;
+    }
+
+    .s2p{
+        width: 580px ;
+    }
+
+    .section-two{
+        margin-top: 45%;
+    }
+
+    .container-two{
+        gap: 45px;
+    }
+
+    .explore{
+        margin-left:160px;
+    }
+
+    .container-three{
+        gap: 60px;
+    }
+
+    .kids-museum{
+        width: 475px;
+        padding: 50px 0;
+    }
+
+    .container-p1, .container-p2, .container-p3, .container-p4 {
+        width: 581px;
+    }
+
+    .c4-group{
+        gap: 75px;
+    }
+
+    .container-four{
+        width: 525px ;
+        
+    }
+
+    .f1{
+        margin-top: 20px;
+    }
+
+
+    .exhibition-spaces{
+        margin-bottom: 30px;
+        margin-left: 150px;
+    }
+
+    .c5p1, .c5p2, .c5p3 {
+        width: 578px;
+        
+    }
+
+    .container-element-four{
+        width: 500px;
+    }
+    .c4-img{
+        width: 60%;
+        margin-left: 75px;
+    }
+
+    .container-element-5{
+        gap: 100px;
+    }
+
+    .heart{
+        width: 450px;
+        padding: 50px 0 50px 0;
+    }
+
+    .ai{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+
+    .cos{
+        width: 350px;
+    }
+
+    .exhibition-spaces-group-1{
+        padding-top: 25px;
+        gap: 50px;
+    }
+
+    .ai1{
+        display: none;
+    }
+
+
+    .evo-img{
+        width: 450px;
+        margin: 40px;
+    }
+
+    .evo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 1160px;
+        height: 420px;
+    }
+
+    .exhibition-spaces-group-2{
+        display: flex;
+        gap: 30px;
+        margin-right: 765px;
+        margin-top: -115px;
+    }
+
+    .evolution{
+        margin-top: 50px;
+    }
+
+    .evo-p{
+        width: 500px;
+    }
+
+    .special-events-ex{
+        margin-left: 115px;
+        margin-top: 110px;
+    }
+
+    .spg-container-element{
+        width: 330px;
+    }
+
+    .special-events-group {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    .get-involved{
+        
+        margin:70px 0 40px 155px;
+    }
+
+    .container-six{
+        gap: 85px;
+    }
+
+    .img-c6{
+        width: 330px;
+    }
+    
+
+
+}
+
+@media screen and (min-width: 1920px){
+    .navbar{
+        justify-content: center;
+        gap: 290px;
+    }
+
+    .nav-item{
+        gap: 45px;
+    }
+
+    .banner{
+       width: 55%;
+    }
+
+    .container-p {
+        font-size: 20px;
+        top: 75%;
+        padding-right: 54px;
+        width: 920px;
+    }
+
+    .explore{
+        margin-left: 395px;
+    }
+
+    .exhibition-spaces{
+        margin-left: 390px;
+    }
+
+    .special-events-ex{
+        margin-left: 355px;
+    }
+
+    .get-involved{
+        margin-left:380px ;
+    }
+
+    
+
+}
+   

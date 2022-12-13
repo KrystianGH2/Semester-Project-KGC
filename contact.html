@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="toggle-element.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="csmuseum.html"
+          ><img
+            class="nav-logo"
+            src="images/community-science-museum-high-resolution-logo-color-on-transparent-background (2).png"
+        /></a>
+        <div class="menu" id="js-menu">
+          <ul class="nav-item">
+            <a class="nav-link" href="csmuseum.html#news">News</a>
+            <a class="nav-link" href="visit.html#visit">Visit</a>
+            <a class="nav-link" href="visit.html#about">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="csmuseum.html#get-involved"
+              >Get involved</a
+            >
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <button id="js-toggle-button" class="hamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="">Contact us</h1>
+
+      <div>
+        <div class="contact-us">
+          <form class="form">
+            <label class="required" for="fname">Full name</label>
+            <input type="name" placeholder="Enter your name" />
+            <label class="required" for="email">Email</label>
+            <input type="email" placeholder="Enter your email" />
+            <label for="number">Number (Optional)</label>
+            <input type="number" />
+
+            <label class="required" class="topic" for="topic">Topic</label>
+
+            <select>
+              <option selected disabled value="topic">Choose topic</option>
+              <option value="size">Party size more than 6 person</option>
+              <option value="reserve">Reservations</option>
+              <option value="guide">Guided Tour</option>
+              <option value="access">Accessibility</option>
+              <option value="report">Report</option>
+            </select>
+
+            <label class="required" for="message">Message</label>
+            <textarea
+              name="textarea"
+              cols="30"
+              placeholder="Enter your text here. . ."
+              rows="10"
+            ></textarea>
+          </form>
+          <div class="submit">
+            <input class="submit-btn" type="submit" value="Send Message" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-elements2">
+        <div class="footer-elements">
+          <div class="connect-section">
+            <h6 class="connect-with-us">Connect with us</h6>
+            <div class="connect-links">
+              <a href="#">FaceBook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="account">
+            <h6>NEWSETTLER</h6>
+            <a href="sign.html">Sign Up</a>
+            <h6 class="log-in">MY ACCOUNT</h6>
+            <a href="login.html">Log In</a>
+          </div>
+        </div>
+        <div class="terms">
+          <a href="#">Terms and conditions</a>
+          <a href="#">Privacy and cookies</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
