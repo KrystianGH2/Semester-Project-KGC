@@ -146,6 +146,13 @@ input{
     text-decoration: none;
 }
 
+@media screen and (min-width: 390px){
+    .container {
+        width: 356px;
+        padding: 50px 0;
+    }
+}
+
 @media screen and (min-width: 480px){
     section{
         margin: 10% 0 0 0;

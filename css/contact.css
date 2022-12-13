@@ -113,7 +113,7 @@ h1{
 }
 
 h1{
-    padding-right: 190px;
+    padding-right: 150px;
 }
 
 section{
@@ -123,13 +123,12 @@ section{
     align-items: center;
 }
 .contact-us{
-    width: 300px;
+    width: 100%;
     background-color: #333533;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 15px;
-    padding: 20px;
+    padding: 45px;
     border-radius: 5px;
 }
 .form{
@@ -254,6 +253,16 @@ a:hover{
 }
 a:active{
     text-decoration: underline;
+}
+
+@media screen and (min-width: 390px){
+
+    .h1 {
+    padding-right: 255px;
+}
+    input {
+    width: 290px;
+}
 }
 
 @media screen and (min-width: 480px){
