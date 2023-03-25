@@ -7,3 +7,6 @@ At the interview with a (client) this case my friend, the first feedback I got w
 Another feedback I got from the interview was about the contents of the main page (home page). Users were overwhelmed by how much there was on the home page, also the images were too small and the image placement was uneven. The improvement I made to fix these was by adding the images and text inside the card and making it hover to show, so in this case, the user can choose which one they wanna read or look at.
 Titles are also improved as they were not aligned correctly while adjusting the site.
 A fixed scroll-up button was added at the bottom of the page, to quickly move up back to the home page.
+
+link to the site
+https://csmsciencemuseum.netlify.app
