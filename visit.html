@@ -10,7 +10,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    
     <script src="toggle-element.js" defer></script>
+    <script defer type="module" src="js/visit.js"></script>
     <!-- Hotjar Tracking Code for my site -->
 <script>
   (function(h,o,t,j,a,r){
@@ -27,20 +29,18 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="csmuseum.html"
+        <a  id="start"href="csmuseum.html"
           ><img
             class="nav-logo"
             src="images/community-science-museum-high-resolution-logo-color-on-transparent-background (2).png"
         /></a>
         <div class="menu" id="js-menu">
           <ul class="nav-item">
-            <a class="nav-link" href="csmuseum.html#news">News</a>
-            <a class="nav-link" href="#visit">Visit</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-            <a class="nav-link" href="csmuseum.html#get-involved"
-              >Get involved</a
-            >
+            <li><a class="nav-link" href="csmuseum.html#news">News</a></li>
+            <li><a class="nav-link" href="csmuseum.html#get-involved">Get involved</a></li>
+            <li><a class="nav-link" href="visit.html#visit">Visit</a></li>
+            <li><a class="nav-link" href="visit.html#about">About</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -48,22 +48,17 @@
           <button id="js-toggle-button" class="hamburger-btn">
             <i class="fa-solid fa-bars"></i>
           </button>
+          <div class="person-icon"><a href="sign.html"><i class="fa-solid fa-user"></i></a></div>
+          <a class="sign-in-2a" href="sign.html"><div class="sign-in-2">Log In</div></a>
         </div>
+        
       </nav>
     </header>
 
     <section>
-      <div class="container">
-        <div class="element">
-          <img
-            class="museum-img"
-            src="images/scott-webb-nUzt8uVCYyI-unsplash.jpg"
-            alt="Museum"
-          />
-        </div>
       </div>
     </section>
-    <div class="about-us" id="about"><h1>About us</h1></div>
+    <div class="about-us"><h1>About us</h1></div>
     <section class="section-one">
       <div class="as">
         <div class="about-section">
@@ -113,9 +108,7 @@
             </p>
             <p class="ad-paragraph">
               If you would like to organise a guided tour for your group of 6 or
-              more people, please
-              <a class="contact-link" href="contact.html">contact us</a> to
-              arrange the tour.
+              more people, please <a class="contact-link" href="contact.html">contact us</a> to arrange the tour.
             </p>
           </div>
 
@@ -139,31 +132,42 @@
           </div>
         </div>
       </div>
-      <div class="reserv">
+      <form autocomplete="on"><div class="reserv">
         <div class="reservation">
           <h3 class="reservation-text">Reservations</h3>
           <div class="res-elements">
             <div class="input-label">
-              <label class="label-res" for="name">Full name</label>
-              <input
+
+
+              <div class="input-group">
+                <label class="label-res" for="name">Full name</label>
+              <input required
+                id="nameJs"
                 class="input-res"
                 type="name"
                 placeholder="Enter your name"
-              />
+              /> <span id="input-error">Name must have at least 5 characters.</span></div>
 
+
+              <div class="input-group">
               <label class="label-res" for="email">Email</label>
               <input
+              autocomplete="on"
+              required
+                id="emailJs"
                 class="input-res"
                 type="Email"
                 placeholder="Enter your email"
-              />
+              /><span id="input-error-email">Please enter a valid email address.</span></div>
+              
+
             </div>
           </div>
 
           <h3 class="plan-visit">Plan of Visit</h3>
           <div class="plan-of-visit">
-            <input class="input-date" type="date" value="" />
-            <input type="time" value="00:00" />
+            <input id="date" class="input-date" type="date" />
+            <input type="time" value="10:00" min="10:00" max="16:00"  />
             <form>
               <select class="selector" name="Size" id="Size">
                 <option selected disabled>Size</option>
@@ -177,9 +181,10 @@
             </form>
           </div>
 
-          <input class="book-now" type="submit" value="Book now" />
+          <button class="book-now" type="submit" value="Book now">Book now</button> 
         </div>
-      </div>
+      </div></form>
+      
     </section>
 
     <section class="visit-section">
@@ -236,34 +241,25 @@
       </div>
     </section>
 
+    <div class="arrow-up"><a class="nav-links" href="#start"><i class="fa-solid fa-arrow-up"></i></a></i></div>
+
     <footer class="footer">
-      <div class="footer-elements2">
         <div class="footer-elements">
-          <div class="ca">
             <div class="connect-section">
               <h6 class="connect-with-us">Connect with us</h6>
               <div class="connect-links">
-                <a href="#">FaceBook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
               </div>
             </div>
 
-            <div class="account">
-              <h6>NEWSETTLER</h6>
-              <a href="sign.html">Sign Up</a>
-              <h6 class="log-in">MY ACCOUNT</h6>
-              <a href="login.html">Log In</a>
-            </div>
-          </div>
 
           <div class="terms">
             <a href="#">Terms and conditions</a>
             <a href="#">Privacy and cookies</a>
           </div>
-        </div>
-      </div>
     </footer>
   </body>
 </html>

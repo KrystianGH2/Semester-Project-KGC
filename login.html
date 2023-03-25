@@ -13,17 +13,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="module" defer src="js/validation.js"></script>
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3396640,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3396640, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <section>
@@ -40,17 +46,50 @@
       <div class="container">
         <div class="element">
           <div class="item">
-            <label class="required" for="email">Email</label>
-            <input class="input-box" type="email" placeholder="bob@gmail.com" />
+            <form id="formJs" autocomplete="on">
+              <div class="input-group">
+                <label class="required" for="email">Email</label>
+                <input
+                  required
+                  id="email"
+                  class="input-box"
+                  type="email"
+                  placeholder="bob@gmail.com"
+                />
+                <span id="email-error">Please enter a valid email.</span>
+              </div>
 
-            <label class="required" for="password">Password</label>
-            <input class="input-box" type="password" placeholder="Password" />
-
-            <input class="sign-up-btn" type="submit" value="Sign up" />
-            <p class="login-direct">
-              Don't have an account?
-              <a class="login-link" href="sign.html"> Sign up.</a>
-            </p>
+              <div class="input-group">
+                <label class="required pass" for="password">Password</label>
+                <input
+                  required
+                  title="Must be at least 8 characters"
+                  id="password"
+                  class="input-box"
+                  type="password"
+                  placeholder="Password"
+                />
+                <span id="password-error">Please enter a valid password.</span>
+              </div>
+              <!-- <div class="pass-error"><span>Password must have at least 8 characters and contain at least two of the following:</span>
+                    <span>uppercase letters, lowercase letters, numbers, and symbols.</span></div>
+                     -->
+              <div class="input-group-3">
+                <button
+                  onclick="window.open('csmuseum.html')"
+                  id="submitJs"
+                  class="sign-up-btn"
+                  type="submit"
+                  disabled
+                >
+                  Login
+                </button>
+                <p class="login-direct">
+                  Don't have an account?
+                  <a class="login-link" href="sign.html"> Sign up.</a>
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
