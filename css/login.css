@@ -1,216 +1,271 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #cfdbd53e;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  background-color: #cfdbd53e;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0 0 0;
+}
+
+.home {
+  width: 300px;
+  display: block;
+  margin-left: 10px;
+}
+
+.fa-arrow-left {
+  font-size: 20px;
+}
+.fa-arrow-left:hover {
+  transform: scale(1.2);
+  transition: 300ms ease;
+  color: #ffdc00;
+}
+
+.fa-user {
+  top: 5px;
+  position: relative;
+  font-size: 20px;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.container {
+  background-color: #333533;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+
+label {
+  padding: 0px 0 5px 0;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 110px;
+}
+
+.input-group-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  border-radius: 2px;
+  border: 0 solid transparent;
+  outline: 0px;
+}
+
+#email-error,
+#password-error {
+  color: red;
+  font-size: 14px;
+  padding: 5px 0 0 0;
+}
+
+#email-error {
+  display: none;
+}
+
+#password-error {
+  display: none;
+}
+::placeholder {
+  padding: 2px;
+}
+
+.login-direct {
+  display: flex;
+  align-self: center;
+}
+
+#submitJs {
+  width: 150px;
+  height: 30px;
+  margin: 10px 0 10px 0;
+}
+
+.sign-up-btn a {
+  color: #333533;
+  text-decoration: none;
+}
+
+.sign-up-btn {
+  width: 150px;
+  height: 30px;
+  margin: 0px 0 10px 0px;
+  align-self: center;
+  background-color: #ffdc00;
+  border: 0 solid transparent;
+  border-radius: 3px;
+  color: black;
+}
+
+.sign-up-btn:hover {
+  cursor: pointer;
+  background-color: #333533;
+  color: #ffdc00;
+  border: 1px solid #fff;
+  transition: 250ms ease-in-out;
+}
+
+.sign-up-btn:active {
+  cursor: pointer;
+  background-color: #333533;
+  color: #ffdc00;
+  border: 1px solid #fff;
+  transition: 250ms ease-in-out;
+}
+
+.pass-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.login-direct {
+  color: #fff;
+}
+
+.login-link {
+  color: #fff;
+  padding-left: 5px;
+}
+
+.login-link:hover {
+  color: #ffdc00;
+  text-decoration: none;
+}
+
+.login-link:active {
+  color: #ffdc00;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 390px) {
+  .container {
+    width: 356px;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  section {
+    margin: 10% 0 0 0;
+  }
+
+  .home {
+    width: 400px;
+  }
+  .container {
+    width: 400px;
+  }
+
+  .item {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .home {
+    width: 450px;
+  }
+
+  .container {
+    width: 450px;
+  }
+
+  .item {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin: 10% 0 10% 0;
+  }
+
+  .home {
+    width: 550px;
+  }
+
+  .container {
+    width: 550px;
+  }
+
+  .item {
+    padding: 70px 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    width: 650px;
+  }
+
+  .container {
+    width: 650px;
+  }
+
+  .item {
+    width: 360px;
+  }
+
+  .sign-up-btn {
+    margin: 15px 0;
+  }
+
+  form {
     justify-content: center;
     align-items: center;
-    margin: 20% 0 0 0; 
+  }
 }
 
-.home{
-    width: 300px;
-    display: block;
-    margin-left: 10px;
+@media screen and (min-width: 1440px) {
+  section {
+    margin-top: 7%;
+  }
 }
 
-.fa-arrow-left{
-    font-size: 20px;
-}
-.fa-arrow-left:hover{
-    scale: 1.04;
-    transition: 90ms ease-in-out;
-}
-
-.fa-user{
-    top: 5px;
-    position: relative;
-    font-size: 20px;
-}
-
-h1{
-    margin: 10px;
-}
-
-.container{
-    background-color: #333533;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-.item{
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-}
-
-label{
-    padding: 5px 0 5px 0;
-    color: #fff;
-}
-
-
-
-input{
-    height: 30px;
-    margin-bottom: 15px;
-    border-radius: 2px;
-    border: 0 solid transparent;
-}
-
-:placeholder-shown{
-    padding: 5px;
-}
-
-.login-direct{
-    display: flex;
-    align-self: center;
-}
-
-.sign-up-btn{
-    margin: 10px;
-    align-self: center;
-    background-color:#FFDC00;
-    border: 0 solid transparent;
-    border-radius: 3px;
-    color: black;
-    width: 100px;
-}
-
-.sign-up-btn:hover{
-    cursor: pointer;
-    background-color: #333533;
-    color: #FFDC00;
-    border: 1px solid #fff;
-    transition: 250ms ease-in-out;
-}
-
-.sign-up-btn:active{
-    cursor: pointer;
-    background-color: #333533;
-    color: #FFDC00;
-    border: 1px solid #fff;
-    transition: 250ms ease-in-out;
-}
-
-
-.login-direct{
-    color: #fff;
-}
-
-.login-link{
-    color: #fff;
-    padding-left: 5px;
-}
-
-.login-link:hover{
-    color: #FFDC00;
-    text-decoration: none;
-}
-
-.login-link:active{
-    color: #FFDC00;
-    text-decoration: none;
-}
-
-@media screen and (min-width: 390px){
-    .container {
-        width: 356px;
-        padding: 50px 0;
-    }
-}
-
-
-@media screen and (min-width: 480px){
-    section{
-        margin: 10% 0 0 0;
-    }
-
-    .home{
-        width: 400px;
-    }
-    .container{
-        width: 400px;
-    }
-
-    .item{
-        padding: 30px 0;
-    }
-
-}
-
-@media screen and (min-width: 640px){
-    .home{
-        width: 450px;
-    }
-
-    .container{
-        width: 450px;
-    }
-
-    .item{
-        width: 300px;
-    }
-}
-
-@media screen and (min-width: 768px){
-
-    section{
-        margin: 10% 0 10% 0;
-    }
-
-    .home{
-        width: 550px;
-    }
-
-    .container{
-        width: 550px;
-    }
-
-    .item{
-        padding: 70px 0px;
-    }
-}
-
-
-@media screen and (min-width: 1024px){
-    .home{
-        width: 650px;
-    }
-
-    .container{
-        width: 650px;
-    }
-
-    .item{
-        width: 360px;
-    }
-
-    .sign-up-btn{
-        margin: 15px 0;
-    }
-}
-
-@media screen and (min-width: 1440px){
-    section{
-        margin-top: 7%;
-    }
-}
-
-@media screen and (min-width: 1920px){
-    section{
-        margin-top: 5%;
-    }
+@media screen and (min-width: 1920px) {
+  section {
+    margin-top: 5%;
+  }
 }
