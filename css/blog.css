@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+  } */
+
+.arrow-up {
+  display: flex;
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  font-size: 18px;
+  background-color: #333533;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: -1px 1px 10px #333533;
+}
+.nav-links {
+  color: #ffdc00;
+}
+.arrow-up a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.sign-in-2a {
+  display: none;
+}
+
+header {
+  background-color: #333533;
+  width: 100%;
+  height: 60px;
+}
+
+.nav-logo {
+  width: 100px;
+  height: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 60px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav-item li {
+  list-style: none;
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: hinamincho-regular;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  background: #ffdc00;
+  height: 2px;
+  left: 0;
+  bottom: -1px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: #ffdc00;
+  transform: scale(1.09);
+  transition: 0.2s ease;
+}
+
+.nav-link:active {
+  cursor: pointer;
+  color: #ffdc00;
+  transform: scale(1.09);
+  transition: 0.2s ease;
+}
+
+.fa-user {
+  display: flex;
+  color: #ffdc00;
+  transition: 0.3s ease;
+  border: 1px solid #ffdc00;
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+.fa-user:hover {
+  transform: scale(1.01);
+}
+.fa-user:active {
+  transform: scale(1.01);
+}
+
+.person-icon {
+  color: #ffdc00;
+}
+
+.menu {
+  display: none;
+  background-color: #333533;
+  width: 100%;
+  height: 310px;
+}
+
+.is-visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  transition: 0.6s ease;
+  top: 6%;
+  left: 0px;
+  z-index: 2;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hamburger-btn {
+  background-color: transparent;
+  border: 0 solid transparent;
+  color: #fff;
+  font-size: 18px;
+}
+
+.hamburger-btn:hover {
+  cursor: pointer;
+  color: #ffdc00;
+}
+
+.hamburger-btn:active {
+  cursor: pointer;
+  color: #ffdc00;
+}
+
+/* searchBar */
+.searchBar {
+  display: flex;
+  max-width: 400px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 15px;
+}
+
+#searchInput {
+  width: 300px;
+  height: 35px;
+  outline: 0px;
+  font-size: 15px;
+  border: 1px solid transparent;
+}
+
+.searchBar label {
+  font-size: 23px;
+  color: darkgray;
+}
+
+/* cards */
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+  margin: 80px 0 0 0;
+  transition: 300ms ease;
+}
+
+.cards a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.title a {
+  background-image: linear-gradient(black, rgb(0, 0, 0));
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: 0.4s ease;
+}
+
+.title a:hover {
+  background-size: 100% 3px;
+}
+
+.title:hover {
+  background-color: rgb(247, 254, 254);
+  transition: 0.4s ease;
+}
+
+.cards .title {
+  height: 50px;
+  padding: 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.cardImg {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.cardImg:hover {
+  transition: 0.2s ease;
+  transform: scale(1.02);
+}
+
+footer a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: #ffdc00;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.terms {
+  margin: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+.connect-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin: 50px 0;
+}
+
+h6 {
+  font-size: 18px;
+}
+.log-in {
+  padding-top: 20px;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 18px;
+  gap: 20px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+  }
+
+  .nav-item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-logo {
+    margin-top: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .person-icon {
+    display: none;
+  }
+
+  .sign-in-2 {
+    display: flex;
+    color: #ffdc00;
+    font-family: hinamincho-regular;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .sign-in-2a {
+    display: block;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    position: relative;
+  }
+
+  .sign-in-2a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #ffdc00;
+    bottom: -1px;
+    left: -1px;
+  }
+
+  .sign-in-2a:hover::after {
+    width: 105%;
+    transition: 0.3s ease;
+  }
+
+  .textBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchbarHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+  }
+
+  .cards {
+    gap: 90px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    margin: 0 5%;
+  }
+}
+@media screen and (min-width: 1760px) {
+  body {
+    margin: 0 13%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    margin: 0 15%;
+  }
+}
