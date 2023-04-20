@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: hinamincho-regular;
-  src: url(fonts/himamincho-regular);
-}
 html {
   scroll-behavior: smooth;
 }
@@ -17,8 +13,8 @@ body {
 }
 
 /* ::-webkit-scrollbar {
-  display: none;
-} */
+      display: none;
+    } */
 
 .arrow-up {
   display: flex;
@@ -49,12 +45,13 @@ body {
 header {
   background-color: #333533;
   width: 100%;
-  height: 60px;
+  height: 80px;
 }
 
 .nav-logo {
   width: 100px;
   height: 60px;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -62,7 +59,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  height: 60px;
+  height: 80px;
 }
 
 .nav-item {
@@ -150,7 +147,7 @@ header {
   position: absolute;
   align-items: center;
   transition: 0.6s ease;
-  top: 6%;
+  top: 7%;
   left: 0px;
   z-index: 2;
 }
@@ -167,7 +164,7 @@ header {
   background-color: transparent;
   border: 0 solid transparent;
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .hamburger-btn:hover {
