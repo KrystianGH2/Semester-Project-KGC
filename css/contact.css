@@ -3,32 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-size: 16px;
-  overflow-y: scroll;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-@font-face {
-  font-family: hinamincho-regular;
-  src: url(fonts/himamincho-regular);
+/* ::-webkit-scrollbar {
+      display: none;
+    } */
+
+.arrow-up {
+  display: flex;
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  font-size: 18px;
+  background-color: #333533;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: -1px 1px 10px #333533;
+}
+.nav-links {
+  color: #ffdc00;
+}
+.arrow-up a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.sign-in-2a {
+  display: none;
 }
 
 header {
   background-color: #333533;
+  width: 100%;
+  height: 80px;
 }
 
 .nav-logo {
   width: 100px;
   height: 60px;
-}
-
-.sign-in-2a {
-  display: none;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -36,6 +59,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
+  height: 80px;
 }
 
 .nav-item {
@@ -43,7 +67,6 @@ header {
   flex-direction: column;
   gap: 20px;
 }
-
 .nav-item li {
   list-style: none;
   position: relative;
@@ -52,9 +75,9 @@ header {
 .nav-link {
   display: flex;
   justify-content: center;
+  text-decoration: none;
   color: #fff;
   font-size: 20px;
-  text-decoration: none;
   font-family: hinamincho-regular;
 }
 
@@ -118,17 +141,17 @@ header {
 }
 
 .is-visible {
-  transition: 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   align-items: center;
-  transition: 0.2s ease;
-  top: 6%;
+  transition: 0.6s ease;
+  top: 7%;
   left: 0px;
   z-index: 2;
 }
+
 .hamburger {
   display: flex;
   flex-direction: row;
@@ -141,7 +164,7 @@ header {
   background-color: transparent;
   border: 0 solid transparent;
   color: #fff;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .hamburger-btn:hover {
@@ -239,7 +262,7 @@ textarea {
 #email,
 #number {
   width: 320px;
-  height: 35px;
+  height: 45px;
   outline: 0px;
 }
 
@@ -276,7 +299,7 @@ textarea {
   padding: 2px 5px;
   border-radius: 2px;
   width: 150px;
-  height: 35px;
+  height: 45px;
 }
 
 .popup {
