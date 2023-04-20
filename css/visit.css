@@ -3,15 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-size: 20px;
-  overflow-y: scroll;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
+/* ::-webkit-scrollbar {
+      display: none;
+    } */
 
 .arrow-up {
   display: flex;
@@ -35,15 +38,6 @@ body {
   transform: scale(1.1);
 }
 
-@font-face {
-  font-family: hinamincho-regular;
-  src: url(fonts/himamincho-regular);
-}
-
-p {
-  font-size: 18px;
-}
-
 .sign-in-2a {
   display: none;
 }
@@ -51,18 +45,21 @@ p {
 header {
   background-color: #333533;
   width: 100%;
+  height: 80px;
 }
 
 .nav-logo {
   width: 100px;
   height: 60px;
+  margin-top: 10px;
 }
 
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 40px;
+  height: 80px;
 }
 
 .nav-item {
@@ -70,7 +67,6 @@ header {
   flex-direction: column;
   gap: 20px;
 }
-
 .nav-item li {
   list-style: none;
   position: relative;
@@ -145,14 +141,13 @@ header {
 }
 
 .is-visible {
-  transition: 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   align-items: center;
-  transition: 0.2s ease;
-  top: 6%;
+  transition: 0.6s ease;
+  top: 7%;
   left: 0px;
   z-index: 2;
 }
@@ -169,7 +164,7 @@ header {
   background-color: transparent;
   border: 0 solid transparent;
   color: #fff;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .hamburger-btn:hover {
@@ -288,6 +283,10 @@ header {
   background-color: #333533;
 }
 
+.res-elements{
+  height: 220px;
+}
+
 .reservation-text {
   color: #ffdc00;
   font-size: 20px;
@@ -303,7 +302,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  height: 85px;
+  height: 95px;
 }
 
 #input-error,
@@ -319,7 +318,7 @@ header {
   font-weight: 600;
 }
 .input-res {
-  height: 35px;
+  height: 45px;
   outline: 0px;
 }
 :placeholder-shown {
@@ -332,6 +331,7 @@ header {
 }
 
 .input-date {
+  height: 45px;
   cursor: pointer;
   background-color: #333533;
   color: #fff;
@@ -350,9 +350,10 @@ input[type="time"] {
   background-color: #333533;
   width: 100px;
   border: 1px solid #fff;
-  text-align: center;
+  align-self: center;
   color: #fff;
   padding: 5px;
+  height: 45px;
 }
 
 .plan-of-visit {
@@ -364,7 +365,7 @@ input[type="time"] {
 .selector {
   cursor: pointer;
   background-color: #333533;
-  height: 35px;
+  height: 45px;
   border: 1px solid #fff;
   color: #fff;
   width: 80px;
@@ -375,8 +376,8 @@ input[type="time"] {
   background-color: #ffdc00;
   color: #333533;
   border: 0 solid transparent;
-  width: 80px;
-  height: 35px;
+  width: 100px;
+  height: 45px;
   margin: 20px 0px 20px 0;
 }
 
