@@ -16,17 +16,18 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10% 0 0 0;
 }
 
+
+
 .home {
-  width: 300px;
-  display: block;
-  margin-left: 10px;
+  align-self: flex-start;
 }
 
 .fa-arrow-left {
   font-size: 45px;
+  color: black;
+  margin: 50px 0;
 }
 .fa-arrow-left:hover {
   transform: scale(1.2);
@@ -38,10 +39,12 @@ section {
   top: 5px;
   position: relative;
   font-size: 20px;
+  color: #ffdc00;
 }
 
 h1 {
   margin: 10px;
+  color: #ffdc00;
 }
 
 .container {
@@ -68,6 +71,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .input-group {
@@ -80,6 +84,9 @@ form {
 .input-group input {
   width: 380px;
   height: 45px;
+  border-radius: 2px;
+  border: 0 solid transparent;
+  outline: 0px;
 }
 
 .input-group-3 {
@@ -111,12 +118,6 @@ form {
   padding: 5px 0 0 0;
 }
 
-input {
-  height: 30px;
-  border-radius: 2px;
-  border: 0 solid transparent;
-  outline: 0px;
-}
 
 :placeholder-shown {
   padding: 5px;
@@ -237,32 +238,11 @@ input {
 
 
 
-@media screen and (min-width: 480px) {
-  section {
-    margin: 10% 0 0 0;
-  }
-
-  .home {
-    width: 400px;
-  }
-  .container {
-    width: 480px;
-  }
-
-  .items {
-    padding: 30px 0;
-  }
-}
 
 
 @media screen and (min-width: 768px) {
-  section {
-    margin: 10% 0 10% 0;
-  }
-
-  .home {
-    width: 550px;
-  }
+ 
+  
 
   .container {
     width: 760px;
@@ -275,9 +255,10 @@ input {
 }
 
 @media screen and (min-width: 1024px) {
-  .home {
-    width: 650px;
+  body {
+    margin: 3% 13%;
   }
+
 
  
   .items {
@@ -290,13 +271,22 @@ input {
 }
 
 @media screen and (min-width: 1440px) {
-  section {
-    margin-top: 7%;
+  body {
+    margin: 3% 23%;
+  }
+
+}
+
+
+@media screen and (min-width: 1920px) {
+  body {
+    margin: 3% 30%;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  section {
-    margin-top: 5%;
+@media screen and (min-width: 2560px) {
+  body {
+    margin: 3% 35%;
   }
 }
+
