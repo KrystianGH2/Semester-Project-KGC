@@ -276,6 +276,34 @@ h1 {
   padding: 10px;
 }
 
+
+.loaders {
+  margin: 50px;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  
+}
+.loaders:after {
+  content: " ";
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 8px solid rgb(80, 165, 38);
+  border-color: rgb(62, 163, 11) transparent rgb(68, 129, 187) transparent;
+  animation: spin 1.2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .cardImg:hover {
   transition: 0.2s ease;
   transform: scale(1.02);
