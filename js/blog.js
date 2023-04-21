@@ -31,13 +31,10 @@ async function fetchData(searchValue = "") {
       `;
     }
   } catch (err) {
-    if(err) 
-      return cards.innerHTML = `
-      <div>There has been an error processing</div>`
-    
+    if (err)
+      return (cards.innerHTML = `
+      <div>There has been an error processing</div>`);
   }
 }
 
 fetchData();
-
-
