@@ -9,7 +9,7 @@ Titles are also improved as they were not aligned correctly while adjusting the 
 A fixed scroll-up button was added at the bottom of the page, to quickly move up back to the home page.
 
 
-///////////////////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 CMS CA
 In this assignment, i've added blog posts that is fetched from my wordpress headless cms. Contents are showed on the details paged when user clicks on chosen blog.
